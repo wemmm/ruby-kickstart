@@ -9,4 +9,7 @@
 # arithmetic2(-6, -7)  # => -3.5
 
 def arithmetic2(a, b)
+ puts ([a, b].min)/2.to_f
 end
+
+arithmetic2(1, 2)
