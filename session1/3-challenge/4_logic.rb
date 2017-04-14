@@ -13,6 +13,19 @@
 
 
 def grade(num_books, has_read_books)
+  if num_books <= 9 and has_read_books == "no"
+    print "D"
+  elsif num_books == [10..20] and has_read_books == "no"
+    print "C"
+  elsif num_books > 20 and has_read_books == "no"
+    print "B"
+  elsif num_books <= 9 and has_read_books == "yes"
+      print "C"
+  elsif num_books == [10..20] and has_read_books == "yes"
+      print "B"
+  elsif num_books > 20 and has_read_books == "yes"
+      print "A"
+    end
 end
 
-
+grade(21, "yes")
