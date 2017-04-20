@@ -14,3 +14,11 @@
 #
 # mod_three [0,1,2,3,4,5,6,7] # => [1, 2, 1, 2, 1]
 
+def mod_three(number_array)
+  new_array = number_array.reject { |n| n%3 == 0 }
+  newer_array = new_array.collect { |n| n % 3 }
+  print newer_array
+end
+
+mod_three([0,1,2,3,4,5,6,7])
+mod_three([3, 6, 9, 12, 22])
