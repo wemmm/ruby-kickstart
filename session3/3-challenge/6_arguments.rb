@@ -19,3 +19,19 @@
 # match_maker true,  true,  true, true, nil     # => [false, true]
 # match_maker true,  true,  true, 0, nil        # => [false, true]
 
+def match_maker(an_array)
+  ultimate_result = []
+  if an_array[0] == true
+    new_array = an_array.drop(1)
+    newer_array = new_array.each_slice(2) 
+    end
+print newer_array
+
+
+
+
+  elsif an_array[0] == false
+  end
+end
+
+print match_maker([true, false, true, false, true])
